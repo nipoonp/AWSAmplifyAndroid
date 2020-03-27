@@ -52,12 +52,17 @@ class SignUpActivity : AppCompatActivity() {
                         if (!signUpResult.confirmationState) {
                             val details =
                                 signUpResult.userCodeDeliveryDetails
-                            Toast.makeText(this@SignUpActivity,"Confirm sign-up with: " + details.destination,Toast.LENGTH_SHORT)
-                            val intent = Intent(this@SignUpActivity, SignUpConfirmActivity::class.java)
+                            Toast.makeText(
+                                this@SignUpActivity,
+                                "Confirm sign-up with: " + details.destination,
+                                Toast.LENGTH_SHORT
+                            )
+                            val intent =
+                                Intent(this@SignUpActivity, SignUpConfirmActivity::class.java)
                             startActivity(intent)
                             finish()
                         } else {
-                            Toast.makeText(this@SignUpActivity,"Sign-up done.",Toast.LENGTH_SHORT)
+                            Toast.makeText(this@SignUpActivity, "Sign-up done.", Toast.LENGTH_SHORT)
 
                         }
                     }

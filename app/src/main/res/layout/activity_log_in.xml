@@ -11,27 +11,32 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="email"/>
+        android:hint="email"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/code"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="code"/>
-
-
-    <Button
-        android:id="@+id/resend_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RESEND CODE"/>
+        android:hint="password"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/sign_up_confirm_button"
+        android:id="@+id/sign_up_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN UP CONFIRM"/>
+        android:text="SIGN UP" />
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD" />
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN" />
 
 </LinearLayout>

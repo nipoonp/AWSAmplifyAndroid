@@ -8,6 +8,7 @@ import com.amazonaws.mobile.client.AWSMobileClient
 import com.amazonaws.mobile.client.Callback
 import com.amazonaws.mobile.client.UserState
 import com.amazonaws.mobile.client.UserStateDetails
+import com.example.fudosample.auth.LogInActivity
 import com.example.fudosample.auth.SignUpActivity
 import kotlinx.android.synthetic.main.activity_authentication.*
 
@@ -30,11 +31,14 @@ class AuthenticationActivity : AppCompatActivity() {
                 override fun onResult(userStateDetails: UserStateDetails) {
                     when (userStateDetails.userState) {
                         UserState.SIGNED_IN -> runOnUiThread {
-                            text.text = "Logged IN"
+                            val intent = Intent(this@AuthenticationActivity, MainActivity::class.java)
+                            startActivity(intent)
+                            finish()
                         }
                         UserState.SIGNED_OUT -> runOnUiThread {
-                            text.text = "Logged OUT"
-//                            showSignIn()
+                            val intent = Intent(this@AuthenticationActivity, LogInActivity::class.java)
+                            startActivity(intent)
+                            finish()
                         }
                         else -> AWSMobileClient.getInstance().signOut()
                     }
@@ -46,7 +50,7 @@ class AuthenticationActivity : AppCompatActivity() {
             })
     }
 
-    private fun onSignUp () {
+    private fun onSignUp() {
         val intent = Intent(this@AuthenticationActivity, SignUpActivity::class.java)
         startActivity(intent)
         finish()
