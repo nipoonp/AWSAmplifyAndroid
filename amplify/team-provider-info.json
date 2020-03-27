@@ -1,0 +1,20 @@
+{
+    "fudosample": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-fudosample-fudosample-121306-authRole",
+            "UnauthRoleArn": "arn:aws:iam::325538381284:role/amplify-fudosample-fudosample-121306-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::325538381284:role/amplify-fudosample-fudosample-121306-authRole",
+            "Region": "ap-southeast-2",
+            "DeploymentBucketName": "amplify-fudosample-fudosample-121306-deployment",
+            "UnauthRoleName": "amplify-fudosample-fudosample-121306-unauthRole",
+            "StackName": "amplify-fudosample-fudosample-121306",
+            "StackId": "arn:aws:cloudformation:ap-southeast-2:325538381284:stack/amplify-fudosample-fudosample-121306/5b6893e0-6fb7-11ea-a38c-0643e0359b60",
+            "AmplifyAppId": "d3fb52jcc4304c"
+        },
+        "categories": {
+            "auth": {
+                "fudosample3d539876": {}
+            }
+        }
+    }
+}
